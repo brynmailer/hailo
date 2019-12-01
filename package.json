@@ -1,0 +1,33 @@
+{
+  "name": "hailo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "nodemon --watch 'src/**/*.ts' --ignore 'src/**/*.spec.ts' --exec 'ts-node' src/index.ts",
+    "start": "node build/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brynmailer/hailo.git"
+  },
+  "author": "Bryn Mailer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brynmailer/hailo/issues"
+  },
+  "homepage": "https://github.com/brynmailer/hailo#readme",
+  "dependencies": {
+    "@types/express": "^4.17.2",
+    "express": "^4.17.1",
+    "express-graphql": "^0.9.0",
+    "graphql": "^14.5.8"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.1",
+    "ts-node": "^8.5.4",
+    "typescript": "^3.7.2"
+  }
+}
